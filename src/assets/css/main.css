@@ -1,0 +1,128 @@
+/* fonts */
+@import url("");
+
+/* Variables Css */
+:root {
+
+    /* hls colors */
+    --first-color: hsl(0, 0%, 0%);
+    --first-color-alt: hsl(0, 0%, 0%);
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-light: hsl(0, 0%, 0%);
+    --body-color: hsl(0, 0%, 0%);
+    --container-color: hsl(0, 0%, 0%);
+
+    /* fonts */
+    --body-font: "";
+    --title-font: "";
+    --subtitle-font: "";
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* Z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color); */
+}
+
+h1,
+h2,
+h3 {
+    /* color: var(--title-color);
+    font-weight: var(--font-medium); */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reusable CSS Classes */
+
+.container {
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+@media screen and (max-width: 340px){
+
+}
+
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 767px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1064px){
+
+}
+
+@media screen and (min-width: 1280px){
+    
+}
