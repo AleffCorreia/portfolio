@@ -6,18 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleff F. Correia</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/css/main.css">
+
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
-        
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <img src="src/assets/images/logo.svg" alt="Aleff Correia Logo Image">
+                Aleff
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_list">
+                        <a href="#" class="nav_link active-link">Home</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav_link">Sobre</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav_link">Habilidades</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav_link">Serviços</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav_link">Portfolio</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav_link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav_buttons">
+                
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- main -->
     <main class="main">
-        <h1>My Page</h1>
+        <section class="home section">
+            <div class="home_container container grid">
+                <img src="src/assets/images/folder.svg" alt="aleff correia " class="home_image">
+                
+                <div class="home_data">
+                    <h1 class="home_title">
+                        <div>
+                        Olá, sou o Aleff
+                       
+                            <img src="src/assets/images/logo.svg" alt="aleff correia logo" class="title_logo">
+                            
+                        </div>
+                        <span class="home_subtitle">Fullstack Developer</span>
+                    </h1>
+
+                    <div class="home_buttons">
+                        <div class="home_cv_button">
+                            <button>Download CV</button>
+                        </div>
+
+                        <a href="https://github.com/aleffcorreia" class="home_social_link" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/aleffcorreia/" class="home_social_link" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                    
+                    <p class="home_description">
+                        Desenvolvedor de sites e aplicações web baseado em tecnologias Javascript
+                    </p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
