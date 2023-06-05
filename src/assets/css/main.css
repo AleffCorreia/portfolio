@@ -6,8 +6,8 @@
 
     --header-height: 3.5rem;
     /* hls colors */
-    --first-color: hsl(0, 0%, 0%);
-    --first-color-alt: hsl(0, 0%, 0%);
+    --first-color: hsl(14, 100%, 57%);
+    --first-color-alt: hsl(14, 100%, 65%);
     --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(211.8, 15%, 22.2%);
     --text-color-light: hsl(211.8, 15%, 50.2%);
@@ -99,8 +99,34 @@ img {
 }
 
 .section {
-    padding-block: 1rem 2rem;
+    padding: 2rem 0 4rem;
+    
 }
+
+.section_title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+
+}
+
+.button {
+    border: none;
+    font-size: var(--normal-font-size);
+
+    background: var(--text-color);
+    padding: .75rem 3rem;
+
+    color: var(--body-color);
+    border-radius: 2rem;
+    
+}
+
+.button_flex{
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+}
+
 
 .main {
     overflow: hidden;
@@ -170,11 +196,12 @@ img {
     color: var(--text-color);
     font-weight: var(--font-medium);
     transition: color .4s;
+    padding: .25rem;
 }
 
 .nav_link:hover {
-    /* color: var(--text-color); */
-    color: #000;
+    color: var(--text-color-light);
+   
 }
 
 .nav_icon {
@@ -203,6 +230,7 @@ img {
 }
 
 .active-link {
+    /* color: var(--first-color); */
     color: var(--text-color-light);
 }
 
@@ -210,6 +238,11 @@ img {
 .home {
     position: relative;
 
+}
+
+.home_section {
+    padding: 2rem 0 2rem;
+    
 }
 
 .home_container {
@@ -252,16 +285,13 @@ img {
     font-weight: var(--font-semi-bold);
 }
 
-.home_cv_button>button {
-    border: none;
-    font-size: var(--normal-font-size);
 
-    background: var(--text-color);
-    padding: .75rem 3rem;
 
-    color: var(--body-color);
-    border-radius: 2rem;
-    margin-bottom: 1rem;
+
+.home_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .home_social_link {
@@ -288,16 +318,70 @@ img {
     font-size: 2rem;
 }
 
+/* Sobre */
+.about_title{
+    margin-bottom: 1rem;
+}
+.about_img-content{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about_image{
+    width: 200px;
+    border-radius: 2rem;
+}
+
+.about_description{
+    text-align: center;
+    color: var(--text-color-light);
+}
+
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.about_info-title{
+    color: var(--text-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.about_info-name{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
+}
+
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 
 /* Media Querys */
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
+
+    .home_section{
+        padding: 2rem 0 2rem;
+    }
 
     .container {
         margin-inline: .75rem;
-    }
-
-    .section {
-        padding-block: 4rem 1rem;
     }
 
     .home_title {
@@ -315,15 +399,30 @@ img {
 
 
 @media screen and (min-width: 576px) {
-  
-    
+    .about_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about_image{
+        width: 300px;
+    }
+    .about_description{
+        text-align: initial;
+    }
+    .about_info{
+        justify-content: space-between;
+    }
+    .about_buttons{
+        justify-content: initial;
+    }
 }
 
 @media screen and (min-width: 767px) {
 
     .section {
-        padding-block: 5rem 1rem;
+        padding: 5rem 0 1rem;
     }
+    
 
     .container {
         margin: auto;
@@ -362,6 +461,10 @@ img {
         margin-left: auto;
     }
 
+    .home_section{
+        padding: 5rem 0 2rem;
+    }
+
     .home_container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'data photo';
@@ -378,12 +481,22 @@ img {
     .scroll_down{
         display: flex;
     }
+
+    .about_container{
+        column-gap: 5rem;
+
+    }
+    .about_image{
+        width: 320px;
+    }
+  
    
 
 
 }
 
 @media screen and (min-width: 1024px) {
+   
 
     .nav {
         height: calc(var(--header-height) + 1.5rem);

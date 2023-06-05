@@ -69,7 +69,8 @@
 
     <!-- main -->
     <main class="main">
-        <section class="home section">
+        <!-- Home -->
+        <section class="home home_section">
             <div class="home_container container grid">
                 <img src="src/assets/images/folder.svg" alt="aleff correia " class="home_image">
 
@@ -86,13 +87,17 @@
 
                     <div class="home_buttons">
                         <div class="home_cv_button">
-                            <button>Download CV</button>
+                            <a class="button cv_button-link" download="" href="src/assets/images/logo.svg">Download
+                                CV</a>
                         </div>
 
-                        <a href="https://github.com/aleffcorreia" class="home_social_link" target="_blank">
-                            <i class="ri-github-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/aleffcorreia/" class="home_social_link" target="_blank">
-                            <i class="ri-linkedin-fill"></i></a>
+                        <div>
+                            <a href="https://github.com/aleffcorreia" class="home_social_link" target="_blank">
+                                <i class="ri-github-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/aleffcorreia/" class="home_social_link"
+                                target="_blank">
+                                <i class="ri-linkedin-fill"></i></a>
+                        </div>
                     </div>
 
                     <p class="home_description">
@@ -105,6 +110,47 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about section" id="#about">
+            <h2 class="section_title about_title">Sobre</h2>
+
+            <div class="about_container container grid">
+                <div class="about_img-content">
+                    <img src="src/assets/images/perfil.jpeg" alt="Aleff Correia" class="about_image">
+                </div>
+
+                <div class="about_data">
+                    <p class="about_description">
+                        Profissional com 04+ anos de experiência com ambientes de TIC, incluindo
+                        suporte, desenvolvimento e infraestrutura.
+                        Atualmente estou trabalhando para ampliar meus conhecimentos em
+                        desenvolvimento de sistemas web utilizando tecnologias como javascript e aspnet.
+                    </p>
+
+                    <div class="about_info">
+                        <div class="about_info-content">
+                            <span class="about_info-title">04+</span>
+                            <span class="about_info-name">Anos <br> Experiência</span>
+                        </div>
+                        <div class="about_info-content">
+                            <span class="about_info-title">01+</span>
+                            <span class="about_info-name">Projetos<br> Completos</span>
+                        </div>
+                        <div class="about_info-content">
+                            <span class="about_info-title">01+</span>
+                            <span class="about_info-name">Projetos<br> Em andamento</span>
+                        </div>
+                    </div>
+
+                    <div class="about_buttons">
+                        <a class="button about_cv-button button_flex" download="">Download CV
+                            
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
