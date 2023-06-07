@@ -325,9 +325,6 @@ img {
 }
 
 /* Sobre */
-.about_title{
-    
-}
 
 .about_container{
     margin-top: 2rem;
@@ -433,6 +430,13 @@ img {
     height: 100%;
     background-color: var(--text-color);
     transform: translate(6px, -7px);
+}
+
+.qualification_content-title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    padding: 2rem 0rem;
+    color: var(--text-color-light);
 }
 
 
@@ -561,13 +565,16 @@ img {
         width: 320px;
     }
 
-    .qualification_container{
-       
-        padding-top: 3rem;
-        max-width: 767px;
-        margin: 0 auto;
-        
+    .qualification_data-left{
+        padding-left: 5rem;
     }
+    .qualification_data-right{
+        padding-left: 2rem;
+    }
+
+   
+
+  
 
     
   
