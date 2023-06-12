@@ -28,3 +28,27 @@ function scrollHeader(){
 }
 
 window.addEventListener('scroll', scrollHeader)
+
+// skills detail
+const skillsDetailViews = document.querySelectorAll('.skills_detail');
+const skillsDetailBtns = document.querySelectorAll('.skills_content-button');
+const skillsDetailCloses = document.querySelectorAll('.skills_detail-close');
+
+let skillsDetail  = function(detailClick){
+    skillsDetailViews[detailClick].classList.add('active_skills-detail');
+}
+
+skillsDetailBtns.forEach((skillsDetailBtn, i ) => {
+    skillsDetailBtn.addEventListener('click', () => {
+        skillsDetail(i);
+    });
+});
+
+skillsDetailCloses.forEach((skillsDetailClose) => {
+    skillsDetailClose.addEventListener('click', () => {
+        skillsDetailViews.forEach((skillsDetailView) => {
+            skillsDetailView.classList.remove('active_skills-detail');
+        });
+    });
+});
+
