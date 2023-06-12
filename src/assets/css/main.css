@@ -442,10 +442,13 @@ img {
 }
 
 /* skills */
+
+.skills_subtitle{
+    margin-bottom: 2rem;
+}
 .skills_container {
-    grid-template-columns: max-content;
-    justify-content: center;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skills_content {
@@ -532,7 +535,7 @@ img {
 
 }
 
-.skills_data-title{
+.skills_data-title {
     margin-bottom: 1rem;
     font-size: var(--h3-font-size);
 }
@@ -575,33 +578,39 @@ img {
     background-color: var(--text-color)
 }
 
-.skills_html{
+.skills_html {
     width: 90%;
 }
 
-.skills_css{
+.skills_css {
     width: 80%;
 }
-.skills_js{
+
+.skills_js {
     width: 75%;
 }
-.skills_angular{
+
+.skills_angular {
     width: 45%;
 }
-.skills_nodejs{
-    width: 50%;
-}
-.skills_net{
-    width: 40%;
-}
-.skills_php{
-    width: 25%;
-}
-.skills_outsystems{
+
+.skills_nodejs {
     width: 50%;
 }
 
-.skills_detail-close{
+.skills_net {
+    width: 40%;
+}
+
+.skills_php {
+    width: 25%;
+}
+
+.skills_outsystems {
+    width: 50%;
+}
+
+.skills_detail-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -634,9 +643,16 @@ img {
         font-size: 1rem;
     }
 
+    .skills_container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
     .skills_content {
         padding-right: 3.5rem;
     }
+
+
 }
 
 
@@ -750,18 +766,15 @@ img {
         padding-left: 2rem;
     }
 
-    .skills_datail_content{
-        width: 450px;
-        
+    .skills_container{
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
     }
 
+    .skills_datail_content {
+        width: 450px;
 
-
-
-
-
-
-
+    }
 
 
 }
@@ -787,9 +800,18 @@ img {
         font-size: var(--biggest-font-size);
     }
 
+    .skills_container{
+        grid-template-columns: repeat(3, 250px);
+    }
+
 
 }
 
 @media screen and (min-width: 1064px) {}
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+
+    .skills_container{
+        grid-template-columns: repeat(3, 310px);
+    }
+}
